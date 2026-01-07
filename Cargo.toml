@@ -1,0 +1,10 @@
+[package]
+name = "Raylib"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+raylib = { version = "5.5" }
+structopt = "0.3.26"
+rand = "0.9.2"
+rfd = "0.17.1"
