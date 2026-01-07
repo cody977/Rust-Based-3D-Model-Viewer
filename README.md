@@ -1,5 +1,8 @@
 # Rust-Based-3D-Model-Viewer
-Simple 3d model viewer powered by Raylib using Rust. This was a project I made while learing Rust with Raylib. I will not be making changes to it, feel free to modify and improve on it.
+Simple 3d model viewer powered by Raylib using Rust. This was a project I made while learning Rust with Raylib. I will not be making changes to it, feel free to modify and improve on it. It does have bugs but is a starting point for anyone to build on.
+
+
+<img width="596" height="469" alt="preview1" src="https://github.com/user-attachments/assets/ffa79e20-387c-4d94-b1e0-f036ee2a946d" />
 
 
 What It Is:
@@ -9,9 +12,12 @@ What It Is:
 What It's Not:
 -A game engine.
 -Meant for real-world use unless improved upon.
+-Animation player.
+-Sound player.
+-Modeler.
+-Animator.
 
 Features
-
 - Leverages Raylib's hardware-accelerated graphics for smooth performance
 - Load and view OBJ, GLTF/GLB, and other common 3D model formats. (only .obj files were tested).
 - View models with textures and material information (must be in same folder as model and mtl file must have the correct path. (It does not automatcially find material files).
@@ -28,9 +34,12 @@ Note:
     --For example, line 3 of spider.obj has mtllib Only_Spider_with_Animations_Export.mtl. 
     --I recommend keeping the .mtl file in the same directory as the .obj file.
 
+Model not shown:
+-If model is not seen, edit the model size under the file path. If still not seen, verify material paths as described above.
+-else, Raylib has a max triangle support for .obj models, try lowering triangles.
+
 
 Prerequisites
-
 - Rust 1.70 or later
 - Raylib development libraries
 
